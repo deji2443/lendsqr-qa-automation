@@ -15,4 +15,5 @@ jobs:
       - name: Run API Tests
         run: |
           newman run collection.json \
-          --header "Authorization: Bearer ${{ secrets.ADJUTOR_API_KEY }}"
+          --header "Authorization: Bearer ${{ secrets.ADJUTOR_API_KEY }}" \
+          --header "Content-Type: application/json"
