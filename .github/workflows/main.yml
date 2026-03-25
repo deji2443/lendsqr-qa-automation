@@ -13,7 +13,4 @@ jobs:
       - name: Install Newman
         run: npm install -g newman
       - name: Run API Tests
-        run: |
-          newman run collection.json \
-          --header "Authorization: Bearer ${{ secrets.ADJUTOR_API_KEY }}" \
-          --header "Content-Type: application/json"
+        run: newman run collection.json --env-var "token=${{ secrets.ADJUTOR_API_KEY }}"
