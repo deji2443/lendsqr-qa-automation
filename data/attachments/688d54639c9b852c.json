@@ -1,0 +1,20 @@
+{
+    "Date": "Wed, 25 Mar 2026 08:30:45 GMT",
+    "Content-Type": "application/json; charset=utf-8",
+    "Content-Length": "102",
+    "Connection": "keep-alive",
+    "Speculation-Rules": "\"/cdn-cgi/speculation\"",
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Expose-Headers": "x-api-key",
+    "Cache-control": "no-cache, no-store, must-revalidate",
+    "Last-Modified": "Wed, 25 Mar 2026 08:30:45 GMT",
+    "ETag": "W/\"66-jDbG3QMbk9JQHe6h7ocx3ZApnTM\"",
+    "Server": "cloudflare",
+    "X-Upstream-Latency": "259",
+    "X-Proxy-Latency": "1",
+    "Via": "1.1 kong/3.9.0",
+    "X-Request-Id": "374d4372816c397f86f3f008b79fba4e",
+    "cf-cache-status": "DYNAMIC",
+    "CF-RAY": "9e1c8e2ccd7b69d0-DFW",
+    "alt-svc": "h3=\":443\"; ma=86400"
+}
