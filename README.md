@@ -1,0 +1,1 @@
+# lendsqr-qa-automation
