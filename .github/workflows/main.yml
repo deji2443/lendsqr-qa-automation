@@ -14,5 +14,5 @@ jobs:
         run: npm install -g newman
       - name: Run API Tests
         run: |
-          newman run collection.json \
+          newman run Lendsqr_Adjutor_Tests.postman_collection.json \
           --header "Authorization: Bearer ${{ secrets.ADJUTOR_API_KEY }}"
