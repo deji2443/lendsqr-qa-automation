@@ -1,12 +1,10 @@
 {
-    "Content-Type": "application/json",
     "Authorization": "Bearer sk_live_hFSCpfpBRxOVABSZA9R3451LSXp3x2WhPZgvWneA",
     "User-Agent": "PostmanRuntime/7.39.1",
     "Accept": "*/*",
     "Cache-Control": "no-cache",
-    "Postman-Token": "d34874e1-ce30-499c-8e01-42f2dfd96c9c",
+    "Postman-Token": "36f04139-f226-4478-acbd-58ee7b8febff",
     "Host": "adjutor.lendsqr.com",
     "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive",
-    "Content-Length": "32"
+    "Connection": "keep-alive"
 }

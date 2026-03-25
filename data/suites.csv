@@ -1,4 +1,4 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Mar 25 08:37:48 UTC 2026","Wed Mar 25 08:37:48 UTC 2026","381","Lendsqr_Adjutor_Tests","","","","","Bank List",""
-"failed","Wed Mar 25 08:37:48 UTC 2026","Wed Mar 25 08:37:48 UTC 2026","133","Lendsqr_Adjutor_Tests","","","","","Ecosystem Lookup",""
-"passed","Wed Mar 25 08:37:48 UTC 2026","Wed Mar 25 08:37:49 UTC 2026","442","Lendsqr_Adjutor_Tests","","","","","BVN Consent",""
+"passed","Wed Mar 25 08:51:30 UTC 2026","Wed Mar 25 08:51:31 UTC 2026","654","Lendsqr_Adjutor_Tests","","","","","Bank List",""
+"passed","Wed Mar 25 08:51:31 UTC 2026","Wed Mar 25 08:51:31 UTC 2026","581","Lendsqr_Adjutor_Tests","","","","","BVN Consent",""
+"failed","Wed Mar 25 08:51:31 UTC 2026","Wed Mar 25 08:51:31 UTC 2026","310","Lendsqr_Adjutor_Tests","","","","","Ecosystem Lookup",""
