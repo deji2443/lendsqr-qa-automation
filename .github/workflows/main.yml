@@ -1,16 +1,53 @@
 name: Lendsqr API Automation
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+      
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '18'
-      - name: Install Newman
-        run: npm install -g newman
+          node-version: '20'
+
+      - name: Install Newman & Allure Reporter
+        run: npm install -g newman newman-reporter-allure
+
       - name: Run API Tests
-        run: newman run collection.json --env-var "token=${{ secrets.ADJUTOR_API_KEY }}"
+        # We use "continue-on-error" because we want the report to generate even if a test fails (like the 500 error)
+        continue-on-error: true
+        run: |
+          newman run collection.json \
+          --env-var "token=${{ secrets.ADJUTOR_API_KEY }}" \
+          --reporters cli,allure \
+          --reporter-allure-export allure-results
+
+      - name: Load Allure Report History
+        uses: actions/checkout@v4
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+
+      - name: Build Allure Report
+        uses: simple-elf/allure-report-action@v1.7
+        if: always()
+        with:
+          allure_results: allure-results
+          gh_pages: gh-pages
+          allure_report: allure-report
+          allure_history: allure-history
+
+      - name: Deploy Report to Github Pages
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: allure-history
