@@ -72,3 +72,11 @@ The latest test execution results, including historical trends and detailed requ
 * **Task 1, 3, 4:** [https://docs.google.com/spreadsheets/d/e/2PACX-1vSiuZG9kHLGInr7PDPi4UoJjrFgbOb9ZEghD_SYTBAsf8ZnfYknoOdcVMWT7PwCow/pubhtml]
 * **Task 2:** [https://github.com/deji2443/lendsqr-qa-automation]
 * **Loom Video:** [Loom Video Link]
+
+
+## 📦 How to Access Reports
+1. **Live Dashboard:** Click the link in the "About" section to view the [Allure Web Report](https://deji2443.github.io/lendsqr-qa-automation/).
+2. **Offline Reports:** - Navigate to the **Actions** tab in this repository.
+   - Click on the latest workflow run.
+   - Scroll down to **Artifacts** to download the `lendsqr-api-reports.zip`.
+   - Extract and open `api-report-summary.html` for a detailed offline Postman execution summary.
